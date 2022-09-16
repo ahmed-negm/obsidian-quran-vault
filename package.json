@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "yarn build && rm -rf Quran && node dist/index.js"
+    "start": "rm -rf Quran && yarn build && node dist/index.js"
   },
   "dependencies": {
     "@types/fs-extra": "^9.0.13",
