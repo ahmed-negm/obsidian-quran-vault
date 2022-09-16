@@ -4,11 +4,14 @@
   "main": "index.js",
   "author": "Ammar Alakkad <am.alakkad@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "fs-extra": "^10.0.0",
-    "quran-json": "^3.1.2"
-  },
   "scripts": {
-    "start": "node src/index.js"
+    "build": "tsc",
+    "start": "yarn build && rm -rf Quran && node dist/index.js"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "fs-extra": "^10.0.0",
+    "quran-json": "^3.1.2",
+    "typescript": "^4.8.3"
   }
 }
